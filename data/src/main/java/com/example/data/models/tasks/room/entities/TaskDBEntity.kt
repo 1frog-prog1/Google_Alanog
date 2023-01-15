@@ -3,7 +3,7 @@ package com.example.data.models.tasks.room.entities
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.example.domain.models.tasks.*
-import java.util.Date
+
 
 @Entity(tableName = "Tasks")
 data class TaskDBEntity (
@@ -11,7 +11,7 @@ data class TaskDBEntity (
 
     var name : String,
     var description : String,
-    var date : Date,
+    var date : Long,
     var is_marked : Boolean,
     var which_subtask : Int
 ) {
