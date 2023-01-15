@@ -10,7 +10,7 @@ class RoomTaskRepository : TaskRepository {
         description: TaskDescription,
         date: TaskDate,
         mark: TaskMark
-    ): TaskModel {
+    ): Task {
         TODO("Not yet implemented")
     }
 
@@ -46,7 +46,7 @@ class RoomTaskRepository : TaskRepository {
         TODO("Not yet implemented")
     }
 
-    override fun createSubTask(taskID: TaskID, subtask_name: TaskName): TaskModel {
+    override fun createSubTask(taskID: TaskID, subtask_name: TaskName): Task {
         TODO("Not yet implemented")
     }
 

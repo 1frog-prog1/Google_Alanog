@@ -5,7 +5,7 @@ import com.example.domain.models.tasks.*
 
 interface TaskRepository {
     fun createTask(name : TaskName, description: TaskDescription,
-                   date : TaskDate, mark : TaskMark) : TaskModel
+                   date : TaskDate, mark : TaskMark) : Task
 
     fun deleteTask(task_id : TaskID)
 
@@ -23,7 +23,7 @@ interface TaskRepository {
 
     fun setTaskIncompleted(task_id: TaskID)
 
-    fun createSubTask(taskID: TaskID, subtask_name : TaskName) : TaskModel
+    fun createSubTask(taskID: TaskID, subtask_name : TaskName) : Task
 
     fun deleteSubTask(subtask_id : TaskID)
 
